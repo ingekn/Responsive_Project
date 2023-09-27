@@ -1,0 +1,97 @@
+:root {
+  --primary-color: #ffeee7;
+  --branding-color: #885df1;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Roboto", sans-serif;
+  --alt-font-family: "Poppins", sans-serif;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+html {
+  background-color: black;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/conscious3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  color: white;
+  text-align: center;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.5;
+  font-family: var(--heading-font-family);
+  margin: 0;
+}
+header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: var(--default-font-family);
+  margin: 0;
+  margin-bottom: 40px;
+}
+header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: var(--default-font-family);
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: var(--default-font-family);
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--branding-color);
+  padding: 16px 32px;
+  border-radius: 100px;
+  gap: 10px;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 60px 0;
+    line-height: 1;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 13px;
+  }
+  header a {
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    padding: 50px 0;
+    line-height: 1;
+  }
+  header h1 {
+    font-size: 28px;
+  }
+  header h2 {
+    font-size: 12px;
+  }
+  header h3 {
+    font-size: 10px;
+  }
+}
