@@ -9,9 +9,11 @@
 html {
   background-color: black;
 }
+
 .container {
   max-width: 1500px;
   margin: 0 auto;
+  grid-gap: 20px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -60,8 +62,39 @@ header a {
   border-radius: 100px;
   gap: 10px;
 }
+footer {
+  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/conscious.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 90px 40px 90px;
+}
 
-@media (max-width: 1000px) {
+footer h3 {
+  font-size: 23px;
+  font-weight: 700;
+  font-family: var(--heading-font-family);
+}
+footer p {
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 24px;
+  font-family: var(--alt-font-family);
+}
+footer a {
+  color: #c4acff;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 50px;
+  margin-right: 20px;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
     line-height: 1;
@@ -78,6 +111,15 @@ header a {
   header a {
     padding: 8px 16px;
     font-size: 11px;
+  }
+  footer {
+    padding: 20px 4px 20px 40px;
+  }
+  footer p {
+    font-size: 11px;
+  }
+  footer h3 {
+    font-size: 16px;
   }
 }
 @media (max-width: 400px) {
