@@ -1,10 +1,8 @@
 :root {
-  --primary-color: #ffeee7;
   --branding-color: #885df1;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Roboto", sans-serif;
   --alt-font-family: "Poppins", sans-serif;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 body {
   background-color: black;
@@ -15,7 +13,7 @@ body {
   grid-gap: 20px;
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../images/conscious2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,9 +105,10 @@ main h2 {
 }
 .introduction {
   margin: 200px 20px 0px 100px;
-  /* background-color: #12101d; */
 }
-
+main {
+  background-color: #080401;
+}
 .alt-picture {
   display: none;
 }
@@ -125,7 +124,14 @@ main a {
 }
 .podcasts h3,
 .meditation h3 {
-  margin-top: 60px;
+  padding-top: 60px;
+}
+.podcasts {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../images/woman_nature.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 .three-columns-grid {
   grid-template-columns: 1fr 1fr 1fr;
@@ -139,6 +145,7 @@ main a {
 .video {
   aspect-ratio: 21 / 9;
   width: 100%;
+  border-radius: 10px;
 }
 .podcast {
   margin: 50px 30px;
@@ -173,11 +180,10 @@ main a {
   text-align: center;
 }
 .first-row {
-  margin-top: 50px;
+  padding: 50px 30px 20px 30px;
 }
 .second-row {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  padding: 20px 30px 80px 30px;
 }
 footer {
   color: #ffffff;
@@ -239,6 +245,7 @@ footer a {
   .meditation-video {
     margin: 0 auto;
   }
+
   footer {
     padding: 20px 4px 20px 40px;
   }
