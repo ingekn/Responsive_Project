@@ -125,11 +125,11 @@ main a {
   margin-top: 60px;
 }
 .three-columns-grid {
-  width: 100%;
+  /* width: 100%; */
   grid-template-columns: 1fr 1fr 1fr;
 }
 .video {
-  aspect-ratio: 11 / 10;
+  aspect-ratio: 21 / 14;
   width: 100%;
   height: auto;
 }
@@ -230,9 +230,6 @@ footer a {
   }
   .podcast {
     margin: 0 auto;
-  }
-  .video {
-    aspect-ratio: 16 / 16;
   }
   footer {
     padding: 20px 4px 20px 40px;
