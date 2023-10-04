@@ -203,13 +203,25 @@ footer h3 {
 footer p {
   font-weight: 400;
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.6;
   line-height: 24px;
   font-family: var(--alt-font-family);
 }
 footer a {
-  color: #c4acff;
+  color: #ffffff;
+  opacity: 0.6;
 }
+.code a {
+  color: #a01abd;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer li {
+  padding: 5px 0;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
