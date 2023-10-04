@@ -118,20 +118,27 @@ main a {
   margin-top: 20px;
 }
 .podcasts h3,
-.podcasts h2 {
+.podcasts h2,
+.meditation h3,
+.meditation h2 {
   text-align: center;
 }
-.podcasts h3 {
+.podcasts h3,
+.meditation h3 {
   margin-top: 60px;
 }
 .three-columns-grid {
-  /* width: 100%; */
   grid-template-columns: 1fr 1fr 1fr;
 }
+.spotify-podcast,
 .video {
   aspect-ratio: 21 / 14;
   width: 100%;
   height: auto;
+}
+.video {
+  aspect-ratio: 21 / 9;
+  width: 100%;
 }
 .podcast {
   margin: 50px 30px;
@@ -160,12 +167,21 @@ main a {
   margin-top: 25px;
 }
 .podcast a {
-  padding: 16px 48px;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  text-align: center;
 }
-
+.first-row {
+  margin-top: 50px;
+}
+.second-row {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
 footer {
   color: #ffffff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(../images/conscious.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,7 +224,7 @@ footer a {
     font-size: 11px;
   }
   main h2 {
-    font-size: 24px;
+    font-size: 30px;
   }
   main p {
     font-size: 14px;
@@ -217,9 +233,10 @@ footer a {
     margin: 100px 20px 0px 20px;
   }
   .three-columns-grid {
-    padding: 10px;
+    padding: 30px 10px;
   }
-  .podcast {
+  .podcast,
+  .meditation-video {
     margin: 0 auto;
   }
   footer {
@@ -232,6 +249,7 @@ footer a {
     font-size: 16px;
   }
 }
+
 @media (max-width: 880px) {
   .two-columns-grid,
   .three-columns-grid {
