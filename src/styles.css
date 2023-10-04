@@ -94,7 +94,7 @@ main h2 {
   font-weight: 700;
   line-height: 1.5;
 }
-main p {
+.introduction p {
   font-family: var(--default-font-family);
   color: #ffffff;
   opacity: 0.7;
@@ -122,36 +122,33 @@ main a {
   text-align: center;
 }
 .podcasts h3 {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .three-columns-grid {
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 40px 180px;
-  text-align: center;
 }
-/* iframe {
-  background-color: #12101d;
-  border-radius: 0px;
-} */
 .video {
-  margin: 0 auto;
-  aspect-ratio: 22 / 23;
+  aspect-ratio: 11 / 10;
   width: 100%;
+  height: auto;
 }
 .podcast {
+  margin: 50px 30px;
   background-color: #ffffff;
   font-family: var(--default-font-family);
   border-radius: 12px;
+  max-width: 392px;
 }
 .podcast-info {
-  margin: 30px;
+  margin: 30px 30px;
   color: #272044;
 }
 .podcast h4 {
   font-size: 24px;
   font-weight: 700;
   text-align: left;
+  margin: 0;
 }
 .podcast p {
   font-weight: 400;
@@ -159,6 +156,8 @@ main a {
   padding-bottom: 15px;
   text-align: left;
   color: #272044;
+  line-height: 1.5;
+  margin-top: 25px;
 }
 .podcast a {
   padding: 16px 48px;
@@ -189,14 +188,15 @@ footer p {
 footer a {
   color: #c4acff;
 }
-@media (max-width: 1200px) {
-  .introduction {
+@media (max-width: 1504px) {
+  .three-columns-grid {
     margin: 80px 20px 0px 30px;
   }
-  main h2 {
+  video {
     font-size: 29px;
   }
 }
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -225,6 +225,15 @@ footer a {
   .introduction {
     margin: 100px 20px 0px 20px;
   }
+  .three-columns-grid {
+    padding: 10px;
+  }
+  .podcast {
+    margin: 0 auto;
+  }
+  .video {
+    aspect-ratio: 16 / 16;
+  }
   footer {
     padding: 20px 4px 20px 40px;
   }
@@ -236,9 +245,11 @@ footer a {
   }
 }
 @media (max-width: 880px) {
-  .two-columns-grid {
+  .two-columns-grid,
+  .three-columns-grid {
     grid-template-columns: 1fr;
   }
+
   main img {
     display: none;
   }
