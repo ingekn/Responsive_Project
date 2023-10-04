@@ -188,15 +188,6 @@ footer p {
 footer a {
   color: #c4acff;
 }
-@media (max-width: 1504px) {
-  .three-columns-grid {
-    margin: 80px 20px 0px 30px;
-  }
-  video {
-    font-size: 29px;
-  }
-}
-
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
