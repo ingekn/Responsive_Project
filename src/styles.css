@@ -252,7 +252,8 @@ footer a {
 
 @media (max-width: 880px) {
   .two-columns-grid,
-  .three-columns-grid {
+  .three-columns-grid,
+  .footer-grid {
     grid-template-columns: 1fr;
   }
 
