@@ -209,6 +209,8 @@ footer p {
 footer a {
   color: #ffffff;
   opacity: 0.6;
+  font-family: var(--alt-font-family);
+  font-size: 14px;
 }
 .code a {
   color: #30ee29;
