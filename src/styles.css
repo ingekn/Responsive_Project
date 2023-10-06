@@ -107,7 +107,9 @@ main h2 {
   margin: 200px 20px 0px 100px;
 }
 main {
-  background-color: #080401;
+  background-color: #12101d;
+  /* background-color: #080905; */
+  /* background-color: #080401; */
 }
 .alt-picture {
   display: none;
@@ -127,7 +129,7 @@ main a {
   padding-top: 60px;
 }
 .podcasts {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../images/woman_nature.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -212,7 +214,8 @@ footer a {
   opacity: 0.6;
 }
 .code a {
-  color: #a01abd;
+  color: #30ee29;
+  opacity: 0.9;
 }
 footer ul {
   list-style: none;
