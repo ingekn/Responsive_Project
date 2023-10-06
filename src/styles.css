@@ -59,6 +59,7 @@ main a {
   padding: 16px 32px;
   border-radius: 100px;
   gap: 10px;
+  margin-bottom: 20px;
 }
 .grid {
   display: grid;
@@ -144,11 +145,7 @@ main a {
   width: 100%;
   height: auto;
 }
-.video {
-  aspect-ratio: 21 / 9;
-  width: 100%;
-  border-radius: 10px;
-}
+
 .podcast {
   margin: 50px 30px;
   background-color: #ffffff;
@@ -278,9 +275,14 @@ footer li {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-
+  .three-columns-grid {
+    margin: 0px 20px;
+  }
   main img {
     display: none;
+  }
+  .podcasts {
+    background-image: none;
   }
   .alt-picture {
     display: block;
