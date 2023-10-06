@@ -5,8 +5,7 @@
   --alt-font-family: "Poppins", sans-serif;
 }
 body {
-  /* background-color: black; */
-  background-color: #12101d;
+  background-color: black;
 }
 .container {
   max-width: 1500px;
@@ -110,8 +109,7 @@ main h2 {
 }
 main {
   /* background-color: #080905; */
-
-  background-color: #080401;
+  background-color: #12101d;
 }
 .alt-picture {
   display: none;
